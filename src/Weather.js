@@ -11,12 +11,12 @@ const [weatherData, setWeatherData] = useState({ready: false});
 function handleResponse(response) {
   setWeatherData ({
     ready: true,
-    temperature: (response.data.main.temp),
-    wind: (response.data.wind.speed),
-    city: (response.data.name),
-    description:(response.data.weather[0].description),
-    humidity: (response.data.main.humidity),
-    iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+    temperature: response.data.main.temp,
+    wind: response.data.wind.speed,
+    city: response.data.name,
+    description:response.data.weather[0].description,
+    humidity: response.data.main.humidity,
+    icon: response.data.weather[0].icon,
     date: new Date(response.data.dt * 1000),
   })
 }
