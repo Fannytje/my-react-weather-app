@@ -9,7 +9,7 @@ export default function App() {
         <footer>
         This project was coded by Fanny Nordberg and is{" "} 
           <a 
-            href="https//:github.com/Fannytje/my-react-weather-app" 
+            href="https://github.com/Fannytje/my-react-weather-app" 
             target="_blank" 
             rel="noreferrer noopener">open-sourced on Github</a> and{" "}
           <a
